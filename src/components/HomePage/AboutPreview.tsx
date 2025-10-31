@@ -5,15 +5,6 @@ const AboutCentivra: React.FC = () => {
   return (
     <section className="bg-white py-24">
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        {/* Image */}
-        <div className="relative">
-          <img
-            src={aboutImage}
-            alt="About Centivra"
-            className="rounded-3xl shadow-lg object-cover w-full"
-          />
-        </div>
-
         {/* Content */}
         <div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#001B51] mb-6">
@@ -38,6 +29,15 @@ const AboutCentivra: React.FC = () => {
           >
             Learn More
           </a>
+        </div>
+
+        {/* Image */}
+        <div className="relative">
+          <img
+            src={aboutImage}
+            alt="About Centivra"
+            className="rounded-3xl shadow-lg object-cover w-full"
+          />
         </div>
       </div>
     </section>

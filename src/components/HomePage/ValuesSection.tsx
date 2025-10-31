@@ -21,7 +21,7 @@ const values = [
 
 const InnovationValues: React.FC = () => {
   return (
-    <section className="bg-[#F9FBFE] py-24 text-center">
+    <section className="bg-[#eff4fc] py-24 text-center">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-[#001B51] mb-4">

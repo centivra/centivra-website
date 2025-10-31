@@ -4,8 +4,7 @@ import ServicesPreview from "../components/HomePage/ServicesPreview";
 import ValuesSection from "../components/HomePage/ValuesSection";
 import AboutPreview from "../components/HomePage/AboutPreview";
 import WhyChooseUs from "../components/HomePage/WhyChooseUs";
-import Process from "../components/HomePage/Process";
-import Testimonials from "../components/HomePage/Testimonials";
+import IndustriesSection from "../components/HomePage/Industries";
 import CTA from "../components/HomePage/CTA";
 
 const Home: React.FC = () => {
@@ -16,8 +15,7 @@ const Home: React.FC = () => {
       <ValuesSection />
       <ServicesPreview />
       <WhyChooseUs />
-      <Process />
-      <Testimonials />
+      <IndustriesSection />
       <CTA />
     </>
   );
