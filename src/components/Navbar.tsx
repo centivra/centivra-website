@@ -16,8 +16,8 @@ const Navbar: React.FC = () => {
       name: "Services",
       path: "/services",
       dropdown: [
-        { name: "Web/Software Development", path: "/services/development" },
-        { name: "Mobile Apps", path: "/services/mobile-apps" },
+        { name: "Software Engineering", path: "/services/software-engineering" },
+        { name: "Mobile App Development", path: "/services/mobile-app-development" },
         { name: "Cloud Solutions", path: "/services/cloud-solutions" },
         { name: "AI & Machine Learning", path: "/services/ai-machine-learning" },
         { name: "UI / UX Design", path: "/services/ui-ux-design" },

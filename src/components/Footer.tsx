@@ -9,12 +9,12 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const services = [
-    'Web / Software Development',
-    'Mobile Apps',
-    'Cloud Solutions',
-    'AI & Machine Learning',
-    'UI / UX Design',
-    'Consulting'
+    { label: 'Software Engineering', path: "/services/software-engineering" },
+    { label:'Mobile App Development', path: "/services/mobile-app-development" },
+    { label:'Cloud Solutions', path: "/services/cloud-solutions" },
+    { label:'AI & Machine Learning', path: "/services/ai-machine-learning" },
+    { label:'UI / UX Design', path: "/services/ui-ux-design" },
+    { label:'Consulting', path: "/services/consulting" },
   ];
 
   const company = [
@@ -53,9 +53,9 @@ const Footer: React.FC = () => {
                 <ul className="space-y-3">
                   {services.map((service, idx) => (
                     <li key={idx}>
-                      <a href="#" className="text-white hover:text-white transition-colors flex items-center group">
+                      <a href={service.path} className="text-white hover:text-white transition-colors flex items-center group">
                         <ChevronRight className="w-4 h-4 mr-1 opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all" />
-                        <span>{service}</span>
+                        <span>{service.label}</span>
                       </a>
                     </li>
                   ))}

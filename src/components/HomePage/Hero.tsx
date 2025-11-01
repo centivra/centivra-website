@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-slate-100 leading-relaxed max-w-2xl mx-auto">
-          Centivra empowers businesses through technology — creating intelligent,
+          Centivra empowers businesses through technology - creating intelligent,
           scalable, and impactful AI-driven digital solutions.
         </p>
 
@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
             href="/services"
             className="group px-8 py-3 bg-white text-[#001B51] text-lg font-semibold rounded-full shadow-md transition-all duration-300 hover:scale-105"
           >
-            Free Consultation
+            Get Free Consultation
           </a>
         </div>
       </div>

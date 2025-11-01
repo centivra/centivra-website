@@ -63,7 +63,7 @@ const industries = [
   {
     icon: Building2,
     title: "Manufacturing & Industry",
-    desc: "Enabling smart factories and supply chain optimization through IoT, automation, and predictive analytics.",
+    desc: "Empowering manufacturers with custom software solutions that enhance operational efficiency and streamline production workflows.",
     image: manufacture
   },
 ];
