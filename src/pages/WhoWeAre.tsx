@@ -142,26 +142,37 @@ const WhoWeAre: React.FC = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="bg-gradient-to-r from-[#001B51] to-[#0070CC] py-16 text-center text-white">
+      <section className="relative bg-gradient-to-br from-[#001B51] via-[#003087] to-[#0070CC] py-16 text-center text-white">
+        <div className="absolute inset-0 opacity-15 pointer-events-none">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+              backgroundSize: "40px 40px",
+            }}
+          ></div>
+        </div>
+
         <h2 className="text-3xl font-bold mb-4">Let’s Build the Future Together</h2>
         <p className="text-slate-200 mb-6">
           Ready to create something extraordinary? Explore our services and start your journey with Centivra today.
         </p>
-        <div className="flex flex-wrap gap-4 justify-center">
+
+        <div className="flex flex-wrap gap-4 justify-center relative z-10">
           <a
             href="/services"
-            className="px-8 py-3 bg-white text-[#001B51] font-semibold rounded-full hover:scale-105 transition-all"
+            className="px-8 py-3 bg-white text-[#001B51] font-semibold rounded-full hover:bg-white transform hover:scale-105 transition-all duration-300 shadow-md"
           >
             View Services
           </a>
           <a
             href="/contact"
-            className="px-8 py-3 border border-white rounded-full hover:bg-white hover:text-[#001B51] font-semibold transition-all"
+            className="px-8 py-3 border border-white rounded-full hover:bg-white hover:text-[#001B51] font-semibold transition-all duration-300"
           >
             Contact Us
           </a>
         </div>
-      </div>
+      </section>
     </section>
   );
 };
