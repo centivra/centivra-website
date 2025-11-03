@@ -4,7 +4,7 @@ import { Code2, Smartphone, Cloud, Brain, Palette, Lightbulb } from "lucide-reac
 const services = [
   { 
     icon: Code2, 
-    title: "Web / Software Development", 
+    title: "Software Engineering", 
     desc: "Custom websites, web apps and enterprise platforms built with cutting-edge technologies for optimal performance and scalability."
   },
   { 

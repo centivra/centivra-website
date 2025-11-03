@@ -32,7 +32,7 @@ const services = [
   },
   {
     icon: Brain,
-    title: "AI & Machine Learning",
+    title: "AI & LLM Solutions",
     desc: "Transforming businesses through intelligent automation, predictive insights, and data-driven innovation.",
     link: "/services/ai-machine-learning",
   },
@@ -79,7 +79,7 @@ const ServicesPage: React.FC = () => {
       <div className="container mx-auto px-6 py-20">
 
         <div className="grid md:grid-cols-2 gap-8">
-          {services.map(({ icon: Icon, title, desc, link }) => (
+          {services.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
               className="group bg-[#F9FBFE] rounded-2xl p-8 border border-[#E3F2FD]/70 shadow-sm hover:shadow-lg hover:border-[#009EFF]/40 transition-all duration-300"
@@ -93,12 +93,12 @@ const ServicesPage: React.FC = () => {
                 </h3>
               </div>
               <p className="text-slate-800 text-lg leading-relaxed mb-6">{desc}</p>
-              <a
+              {/* <a
                 href={link}
                 className="inline-flex items-center gap-2 text-[#0070CC] font-semibold hover:text-[#001B51] transition-all"
               >
                 Learn More <ArrowRight size={16} />
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

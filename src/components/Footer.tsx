@@ -9,12 +9,9 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const services = [
-    { label: 'Software Engineering', path: "/services/software-engineering" },
-    { label:'Mobile App Development', path: "/services/mobile-app-development" },
-    { label:'Cloud Solutions', path: "/services/cloud-solutions" },
-    { label:'AI & Machine Learning', path: "/services/ai-machine-learning" },
-    { label:'UI / UX Design', path: "/services/ui-ux-design" },
-    { label:'Consulting', path: "/services/consulting" },
+    { label: "Engineering & Development", path: "/services/engineering-and-development" },
+    { label: "LLM & AI Solutions", path: "/services/llm-and-ai-solutions" },
+    { label: "Design & Experience", path: "/services/design-and-experience" },
   ];
 
   const company = [
@@ -132,14 +129,11 @@ const Footer: React.FC = () => {
                 © {currentYear} Centivra IT Solutions. All rights reserved.
               </div>
               
-              <div className="flex flex-wrap justify-center gap-6">
+              {/* <div className="flex flex-wrap justify-center gap-6">
                 <a href="#" className="text-slate-300 hover:text-white text-sm transition-colors">
                   Privacy Policy
                 </a>
-                <a href="#" className="text-slate-300 hover:text-white text-sm transition-colors">
-                  Terms of Service
-                </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
