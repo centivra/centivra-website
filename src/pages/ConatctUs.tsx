@@ -53,13 +53,43 @@ const Contact: React.FC = () => {
     validateField(name, value);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!validate()) return;
 
-    setSuccess("Thank you! We’ll get back to you shortly.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setErrors({});
+    const formDataToSend = {
+      access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formDataToSend),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSuccess(" Thank you! Your message has been sent successfully.");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+        setErrors({});
+      } else {
+        setSuccess("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSuccess("Unable to send. Please try again later.");
+    }
+
     setTimeout(() => setSuccess(""), 4000);
   };
 
@@ -107,6 +137,7 @@ const Contact: React.FC = () => {
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-6">
+            <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />  {/*Honeypot field */}
             {/* Name */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
@@ -121,7 +152,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   className={`w-full pl-10 pr-4 py-3 rounded-xl border bg-white ${
                     errors.name ? "border-red-500" : "border-slate-300"
-                  } focus:ring-2 focus:ring-[#009EFF] focus:border-transparent transition`}
+                  } focus:outline-none focus:ring-2 focus:ring-[#009EFF] transition`}
                   placeholder="Enter your full name"
                 />
               </div>
@@ -144,7 +175,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   className={`w-full pl-10 pr-4 py-3 rounded-xl border bg-white ${
                     errors.email ? "border-red-500" : "border-slate-300"
-                  } focus:ring-2 focus:ring-[#009EFF] focus:border-transparent transition`}
+                  } focus:outline-none focus:ring-2 focus:ring-[#009EFF] transition`}
                   placeholder="you@example.com"
                 />
               </div>
@@ -165,7 +196,7 @@ const Contact: React.FC = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full pl-10 pr-4 py-3 rounded-xl border bg-white border-slate-300 focus:ring-2 focus:ring-[#009EFF] focus:border-transparent transition"
+                  className="w-full pl-10 pr-4 py-3 rounded-xl border bg-white border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#009EFF] transition"
                   placeholder="+1 (555) 123-4567"
                 />
               </div>
@@ -183,7 +214,7 @@ const Contact: React.FC = () => {
                 rows={5}
                 className={`w-full px-4 py-3 rounded-xl border bg-white ${
                   errors.message ? "border-red-500" : "border-slate-300"
-                } focus:ring-2 focus:ring-[#009EFF] focus:border-transparent transition resize-none`}
+                } focus:outline-none focus:ring-2 focus:ring-[#009EFF] transition resize-none`}
                 placeholder="Tell us briefly about your project..."
               ></textarea>
               {errors.message && (

@@ -141,56 +141,48 @@ const Solutions = () => {
 
             return (
               <div
-                key={industry.title}
-                className={`grid md:grid-cols-2 gap-12 items-center ${
-                  !isEven ? "md:flex-row-reverse" : ""
-                }`}
-              >
-                {/* Image */}
-                <div
-                  className={`relative group overflow-hidden rounded-2xl shadow-xl ${
-                    isEven ? "order-1" : "order-2"
-                  }`}
-                >
-                  <div className="relative h-[400px] overflow-hidden">
-                    <img
-                      src={industry.image}
-                      alt={industry.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#001B51]/60 via-transparent to-transparent"></div>
-                  </div>
-                  
-                  {/* Gradient accent */}
-                  <div
-                    className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${industry.color}`}
-                  ></div>
-                </div>
+  className={`grid md:grid-cols-2 gap-12 items-center`}
+>
+  {/* Image */}
+  <div
+    className={`relative group overflow-hidden rounded-2xl shadow-xl 
+    ${isEven ? "order-2 md:order-1" : "order-2 md:order-2"}`}
+  >
+    <div className="relative h-[400px] overflow-hidden">
+      <img
+        src={industry.image}
+        alt={industry.title}
+        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#001B51]/60 via-transparent to-transparent"></div>
+    </div>
 
-                {/* Content */}
-                <div
-                  className={`space-y-6 ${isEven ? "order-2" : "order-1"} ${
-                    !isEven ? "md:pr-8" : "md:pl-8"
-                  }`}
-                >
-                  {/* Icon with gradient */}
-                  <div className="flex items-center gap-1">
-                    <div>
-                      <Icon className="w-12 h-12 text-slate-500" />
-                    </div>
-                  </div>
+    {/* Gradient accent */}
+    <div
+      className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${industry.color}`}
+    ></div>
+  </div>
 
-                  {/* Title */}
-                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
-                    {industry.title}
-                  </h3>
+  {/* Content */}
+  <div
+    className={`space-y-6 ${isEven ? "order-1 md:order-2" : "order-1 md:order-1"} ${
+      !isEven ? "md:pr-8" : "md:pl-8"
+    }`}
+  >
+    <div className="flex items-center gap-1">
+      <Icon className="w-12 h-12 text-slate-500" />
+    </div>
 
-                  {/* Description */}
-                  <p className="text-lg text-gray-800 leading-relaxed text-justify">
-                    {industry.desc}
-                  </p>
-                </div>
-              </div>
+    <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+      {industry.title}
+    </h3>
+
+    <p className="text-lg text-gray-800 leading-relaxed text-justify">
+      {industry.desc}
+    </p>
+  </div>
+</div>
+
             );
           })}
         </div>

@@ -20,8 +20,8 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaFacebookF className="w-5 h-5" />, href: '#', label: 'Facebook' },
-    { icon: <FaInstagram className="w-5 h-5" />, href: '#', label: 'Instagram' },
+    { icon: <FaFacebookF className="w-5 h-5" />, href: 'https://web.facebook.com/profile.php?id=61583140060618', label: 'Facebook' },
+    { icon: <FaInstagram className="w-5 h-5" />, href: 'https://www.instagram.com/centivra/', label: 'Instagram' },
     { icon: <FaLinkedinIn className="w-5 h-5" />, href: '#', label: 'LinkedIn' },
   ];
 
@@ -107,6 +107,8 @@ const Footer: React.FC = () => {
                           key={idx}
                           href={social.href}
                           aria-label={social.label}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className={`w-11 h-11 flex items-center justify-center text-slate-200 hover:text-white transition-all group`}
                         >
                           <div className="group-hover:scale-115 transition-transform">

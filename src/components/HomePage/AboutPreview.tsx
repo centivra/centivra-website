@@ -7,7 +7,7 @@ const AboutCentivra: React.FC = () => {
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Content */}
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold text-[#001B51] mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#001B51] mb-6">
             Who We Are
           </h2>
 

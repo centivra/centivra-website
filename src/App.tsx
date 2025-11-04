@@ -8,6 +8,7 @@ import EngineeringAndDevelopment from "./pages/ServicesPages/SoftwareEngineering
 import LLMAndAISolutions from "./pages/ServicesPages/LLMAndAISolutions";
 import DesignAndExperience from "./pages/ServicesPages/DesignAndExperience";
 import Contact from "./pages/ConatctUs";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             element={<DesignAndExperience />}
           />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>

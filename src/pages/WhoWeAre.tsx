@@ -45,35 +45,35 @@ const WhoWeAre: React.FC = () => {
       {/* About Section */}
         <div className="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-0 items-center">
             {/* Image */}
-            <div className="relative">
-            <img
-                src={aboutImage}
-                alt="About Centivra"
-                className="rounded-2xl shadow-lg object-cover h-auto w-150"
-            />
+            <div className="relative order-2 md:order-1 mt-10 md:mt-0">
+              <img
+                  src={aboutImage}
+                  alt="About Centivra"
+                  className="rounded-2xl shadow-lg object-cover h-auto w-150"
+              />
             </div>
 
             {/* Text */}
-            <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Who <span className="text-[#009EFF]">We Are</span>
-            </h2>
-            <p className="text-slate-800 text-lg text-justify leading-relaxed mb-5">
-                Centivra is a forward-thinking technology company dedicated to helping businesses
-                harness the power of innovation. From AI-driven software to full-scale digital
-                solutions, we deliver systems built for performance, scalability, and real-world impact.
-            </p>
-            <p className="text-slate-800 text-lg text-justify leading-relaxed mb-8">
-                We bridge the gap between technology and human experience - transforming bold ideas
-                into intelligent products that drive growth and transformation. Our focus is on crafting
-                digital ecosystems that evolve with your business.
-            </p>
-            <a
-                href="/services"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#0070CC] transition"
-            >
-                Explore Our Services <ArrowRight size={18} />
-            </a>
+            <div className="order-1 md:order-2">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  Who <span className="text-[#009EFF]">We Are</span>
+              </h2>
+              <p className="text-slate-800 text-lg text-justify leading-relaxed mb-5">
+                  Centivra is a forward-thinking technology company dedicated to helping businesses
+                  harness the power of innovation. From AI-driven software to full-scale digital
+                  solutions, we deliver systems built for performance, scalability, and real-world impact.
+              </p>
+              <p className="text-slate-800 text-lg text-justify leading-relaxed mb-8">
+                  We bridge the gap between technology and human experience - transforming bold ideas
+                  into intelligent products that drive growth and transformation. Our focus is on crafting
+                  digital ecosystems that evolve with your business.
+              </p>
+              <a
+                  href="/services"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#0070CC] transition"
+              >
+                  Explore Our Services <ArrowRight size={18} />
+              </a>
             </div>
         </div>
 
