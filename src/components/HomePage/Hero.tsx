@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import image1 from "../../assets/images/hero5.jpg";
-import image2 from "../../assets/images/hero2.jpg";
-import image3 from "../../assets/images/hero3.jpg";
+import image1 from "../../assets/images/Hero5.jpg";
+import image2 from "../../assets/images/Hero2.jpg";
+import image3 from "../../assets/images/Hero3.jpg";
 import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
