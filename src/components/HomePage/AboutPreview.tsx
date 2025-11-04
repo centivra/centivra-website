@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../assets/images/Hero1.png";
+import aboutImage from "../../assets/images/Hero1.jpg";
 import { Link } from "react-router-dom";
 
 const AboutCentivra: React.FC = () => {

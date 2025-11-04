@@ -1,7 +1,7 @@
 import React from "react";
 import { Palette, MousePointerClick, Layers, Smartphone, Eye } from "lucide-react";
 import HeroImage from "../../assets/images/99514.jpg";
-import UIUX from "../../assets/images/uiux1.jpg";
+import UIUX from "../../assets/images/uiux.jpg";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
