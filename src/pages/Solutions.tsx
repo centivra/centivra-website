@@ -10,6 +10,7 @@ import {
   Factory,
   ArrowRight,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 import saas from "../assets/images/saas.jpg";
 import fintech from "../assets/images/fintech.jpg";
@@ -82,6 +83,16 @@ const industries = [
 
 const Solutions = () => {
   return (
+    <>
+      <Helmet>
+        <title>Industry Solutions | Centivra Digital Transformation Experts</title>
+        <meta
+          name="description"
+          content="Explore how Centivra helps industries like finance, healthcare, education, and e-commerce with tailored software, AI integrations, and scalable technology solutions."
+        />
+        <link rel="canonical" href="https://www.centivra.com/solutions" />
+      </Helmet>
+
     <div className="bg-white">
 
         {/* Hero Section */}
@@ -230,6 +241,7 @@ const Solutions = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

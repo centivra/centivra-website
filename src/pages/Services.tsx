@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import team1 from "../assets/images/104048.jpg";
 import HeroImage from "../assets/images/99514.jpg";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -52,6 +53,16 @@ const services = [
 
 const ServicesPage: React.FC = () => {
   return (
+    <>
+    <Helmet>
+      <title>Our Services | Centivra Software & Technology Solutions</title>
+      <meta
+        name="description"
+        content="Discover Centivra’s range of services — from software engineering and mobile app development to AI integrations, cloud solutions, and digital consulting."
+      />
+      <link rel="canonical" href="https://www.centivra.com/services" />
+    </Helmet>
+
     <section className="bg-white text-[#001B51]">
         {/* Hero Section */}
         <div
@@ -134,6 +145,7 @@ const ServicesPage: React.FC = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

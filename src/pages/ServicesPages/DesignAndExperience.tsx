@@ -2,9 +2,20 @@ import React from "react";
 import { Palette, MousePointerClick, Layers, Smartphone, Eye } from "lucide-react";
 import HeroImage from "../../assets/images/99514.jpg";
 import UIUX from "../../assets/images/uiux1.jpg";
+import { Helmet } from "react-helmet-async";
 
 const DesignAndExperience: React.FC = () => {
   return (
+    <>
+      <Helmet>
+        <title>Design & Experience | Centivra UI/UX Design Services</title>
+        <meta
+          name="description"
+          content="Centivra creates user-centered, modern UI/UX designs that blend beauty and usability. We craft digital experiences that enhance engagement, trust, and brand identity."
+        />
+        <link rel="canonical" href="https://www.centivra.com/services/design-and-experience" />
+      </Helmet>
+
     <section className="text-slate-900">
       {/* Hero Section */}
         <div
@@ -198,6 +209,7 @@ const DesignAndExperience: React.FC = () => {
         </a>
       </div>
     </section>
+    </>
   );
 };
 

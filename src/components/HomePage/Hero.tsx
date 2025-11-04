@@ -59,11 +59,11 @@ const Hero: React.FC = () => {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-Poppins font-semibold text-white leading-tight">
-          Empowering{" "}
+          Engineering the{" "}
           <span className="block bg-gradient-to-r from-[#009EFF] to-[#91BEE8] bg-clip-text text-transparent">
-            Innovation
+            Future
           </span>
-          Through Technology
+          of Intelligence
         </h1>
 
         <p className="text-lg md:text-xl text-slate-100 leading-relaxed max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
           <a
-            href="/services"
+            href="/contact"
             className="group px-8 py-3 bg-white text-[#001B51] text-lg font-semibold rounded-full shadow-md transition-all duration-300 hover:scale-105"
           >
             Get Free Consultation

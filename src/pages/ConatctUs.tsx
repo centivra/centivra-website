@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Mail, Phone, User } from "lucide-react";
 import HeroImage from "../assets/images/99514.jpg";
+import { Helmet } from "react-helmet-async";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -63,6 +64,16 @@ const Contact: React.FC = () => {
   };
 
   return (
+    <>
+    <Helmet>
+      <title>Contact Us | Centivra Software Company</title>
+      <meta
+        name="description"
+        content="Get in touch with Centivra for software development, AI integration, and digital solutions. Let’s build innovative technology that transforms your business."
+      />
+      <link rel="canonical" href="https://www.centivra.com/contact" />
+    </Helmet>
+
     <section className="bg-white">
         {/* Hero / Welcome Section */}
         <div
@@ -213,6 +224,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

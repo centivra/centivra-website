@@ -2,9 +2,20 @@ import React from "react";
 import { Brain, Workflow, BarChart3, Cpu, ShieldCheck } from "lucide-react";
 import HeroImage from "../../assets/images/99514.jpg";
 import AiImage from "../../assets/images/ai.jpg";
+import { Helmet } from "react-helmet-async";
 
 const LLMAndAISolutions: React.FC = () => {
   return (
+    <>
+      <Helmet>
+        <title>LLM & AI Solutions | Centivra Artificial Intelligence Services</title>
+        <meta
+          name="description"
+          content="Centivra integrates AI and machine learning into digital products, enabling automation, smart analytics, and intelligent user experiences that drive efficiency and innovation."
+        />
+        <link rel="canonical" href="https://www.centivra.com/services/llm-and-ai-solutions" />
+      </Helmet>
+
     <section className="text-slate-900">
       {/* Hero Section */}
         <div
@@ -142,6 +153,7 @@ const LLMAndAISolutions: React.FC = () => {
         </a>
       </div>
     </section>
+    </>
   );
 };
 

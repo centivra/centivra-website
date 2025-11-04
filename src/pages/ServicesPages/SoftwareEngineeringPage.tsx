@@ -14,9 +14,20 @@ import {
 import HeroImage from "../../assets/images/99514.jpg";
 import processImg from "../../assets/images/process.jpg";
 import teamPhoto from "../../assets/images/value.jpg";
+import { Helmet } from "react-helmet-async";
 
 const EngineeringAndDevelopment: React.FC = () => {
   return (
+    <>
+      <Helmet>
+        <title>Engineering & Development | Centivra Software Solutions</title>
+        <meta
+          name="description"
+          content="Centivra delivers end-to-end software engineering, web, and mobile development services focused on performance, scalability, and real-world impact for modern businesses."
+        />
+        <link rel="canonical" href="https://www.centivra.com/services/engineering-and-development" />
+      </Helmet>
+
     <main className="text-[#001B51] bg-white">
       {/* Hero / Welcome Section */}
         <div
@@ -333,6 +344,7 @@ const EngineeringAndDevelopment: React.FC = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

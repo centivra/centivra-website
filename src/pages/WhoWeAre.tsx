@@ -2,9 +2,20 @@ import React from "react";
 import { ArrowRight, Target, Lightbulb, Users, BrainIcon, ShieldIcon } from "lucide-react";
 import aboutImage from "../assets/images/AboutUs.jpg";
 import HeroImage from "../assets/images/99514.jpg";
+import { Helmet } from "react-helmet-async";
 
 const WhoWeAre: React.FC = () => {
   return (
+    <>
+      <Helmet>
+        <title>About Us | Centivra - Driving Innovation Through Technology</title>
+        <meta
+          name="description"
+          content="Learn about Centivra — a forward-thinking technology company dedicated to building AI-driven software, scalable platforms, and digital ecosystems that transform businesses."
+        />
+        <link rel="canonical" href="https://www.centivra.com/who-we-are" />
+      </Helmet>
+
     <section className="bg-white text-[#001B51]">
       {/* Hero / Welcome Section */}
         <div
@@ -174,6 +185,7 @@ const WhoWeAre: React.FC = () => {
         </div>
       </section>
     </section>
+    </>
   );
 };
 
