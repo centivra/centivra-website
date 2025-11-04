@@ -3,6 +3,7 @@ import { Brain, Workflow, BarChart3, Cpu, ShieldCheck } from "lucide-react";
 import HeroImage from "../../assets/images/99514.jpg";
 import AiImage from "../../assets/images/ai.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const LLMAndAISolutions: React.FC = () => {
   return (
@@ -145,12 +146,12 @@ const LLMAndAISolutions: React.FC = () => {
           Whether it’s automating processes or enhancing insights, Centivra delivers intelligent
           AI integrations that work seamlessly across your systems.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="px-8 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#00256D] transition"
         >
           Contact Us
-        </a>
+        </Link>
       </div>
     </section>
     </>

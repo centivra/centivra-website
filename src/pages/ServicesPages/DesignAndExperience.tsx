@@ -3,6 +3,7 @@ import { Palette, MousePointerClick, Layers, Smartphone, Eye } from "lucide-reac
 import HeroImage from "../../assets/images/99514.jpg";
 import UIUX from "../../assets/images/uiux1.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const DesignAndExperience: React.FC = () => {
   return (
@@ -201,12 +202,12 @@ const DesignAndExperience: React.FC = () => {
           Partner with Centivra to create intuitive, high-performing designs that elevate your
           digital presence and delight your users.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="px-8 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#00256D] transition"
         >
           Contact Us
-        </a>
+        </Link>
       </div>
     </section>
     </>

@@ -10,6 +10,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 import saas from "../assets/images/saas.jpg";
 import fintech from "../assets/images/fintech.jpg";
@@ -213,20 +214,20 @@ const Solutions = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#001B51] font-semibold rounded-full hover:bg-white transform hover:scale-105 transition-all duration-300 shadow-xl"
               >
                 <span>Contact Us</span>
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </Link>
 
-              <a
-                href="/services"
+              <Link
+                to="/services"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-white font-semibold rounded-full border-2 border-white hover:bg-white hover:text-[#001B51] transition-all duration-300"
               >
                 <span>Explore Services</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@ import {
 import team1 from "../assets/images/104048.jpg";
 import HeroImage from "../assets/images/99514.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -135,12 +136,12 @@ const ServicesPage: React.FC = () => {
               We believe in partnership-driven development where innovation meets
               reliability and passion meets precision.
             </p>
-            <a
-              href="/who-we-are"
+            <Link
+              to="/who-we-are"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#0070CC] transition"
             >
               About Us <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

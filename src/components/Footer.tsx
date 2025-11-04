@@ -4,6 +4,7 @@ import {
 } from 'lucide-react';
 import LogoImage from "../assets/images/Logo-white-transparency.png";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaEnvelope, FaLocationArrow} from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -50,10 +51,10 @@ const Footer: React.FC = () => {
                 <ul className="space-y-3">
                   {services.map((service, idx) => (
                     <li key={idx}>
-                      <a href={service.path} className="text-white hover:text-white transition-colors flex items-center group">
+                      <Link to={service.path} className="text-white hover:text-white transition-colors flex items-center group">
                         <ChevronRight className="w-4 h-4 mr-1 opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all" />
                         <span>{service.label}</span>
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -65,10 +66,10 @@ const Footer: React.FC = () => {
                 <ul className="space-y-3">
                   {company.map((item, idx) => (
                     <li key={idx}>
-                      <a href={item.path} className="text-white hover:text-white transition-colors flex items-center group">
+                      <Link to={item.path} className="text-white hover:text-white transition-colors flex items-center group">
                         <ChevronRight className="w-4 h-4 mr-1 opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all" />
                         <span>{item.label}</span>
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

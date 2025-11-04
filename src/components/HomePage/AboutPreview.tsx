@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImage from "../../assets/images/Hero1.png";
+import { Link } from "react-router-dom";
 
 const AboutCentivra: React.FC = () => {
   return (
@@ -23,12 +24,12 @@ const AboutCentivra: React.FC = () => {
             intelligent products that drive growth and transformation.
           </p>
 
-          <a
-            href="/who-we-are"
+          <Link
+            to="/who-we-are"
             className="inline-block px-6 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#0070CC] transition"
           >
             Learn More
-          </a>
+          </Link>
         </div>
 
         {/* Image */}

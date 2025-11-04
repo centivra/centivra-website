@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CTA: React.FC = () => {
   return (
@@ -8,12 +9,12 @@ const CTA: React.FC = () => {
         <p className="text-slate-700 mb-8 max-w-xl mx-auto text-lg">
           Let’s bring your vision to life with cutting-edge technology and innovation.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="px-8 py-3 bg-[#009EFF] text-white font-semibold rounded-full hover:bg-[#001B51] hover:text-white transition"
         >
           Get Free Consultation
-        </a>
+        </Link>
       </div>
     </section>
   );

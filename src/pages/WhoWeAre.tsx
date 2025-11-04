@@ -3,6 +3,7 @@ import { ArrowRight, Target, Lightbulb, Users, BrainIcon, ShieldIcon } from "luc
 import aboutImage from "../assets/images/AboutUs.jpg";
 import HeroImage from "../assets/images/99514.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const WhoWeAre: React.FC = () => {
   return (
@@ -68,12 +69,12 @@ const WhoWeAre: React.FC = () => {
                   into intelligent products that drive growth and transformation. Our focus is on crafting
                   digital ecosystems that evolve with your business.
               </p>
-              <a
-                  href="/services"
+              <Link
+                  to="/services"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#0070CC] transition"
               >
                   Explore Our Services <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
         </div>
 
@@ -170,18 +171,18 @@ const WhoWeAre: React.FC = () => {
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center relative z-10">
-          <a
-            href="/services"
+          <Link
+            to="/services"
             className="px-8 py-3 bg-white text-[#001B51] font-semibold rounded-full hover:bg-white transform hover:scale-105 transition-all duration-300 shadow-md"
           >
             View Services
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="px-8 py-3 border border-white rounded-full hover:bg-white hover:text-[#001B51] font-semibold transition-all duration-300"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
     </section>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import image1 from "../../assets/images/hero5.png";
 import image2 from "../../assets/images/hero2.png";
 import image3 from "../../assets/images/hero3.png";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -72,12 +73,12 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="group px-8 py-3 bg-white text-[#001B51] text-lg font-semibold rounded-full shadow-md transition-all duration-300 hover:scale-105"
           >
             Get Free Consultation
-          </a>
+          </Link>
         </div>
       </div>
     </section>
