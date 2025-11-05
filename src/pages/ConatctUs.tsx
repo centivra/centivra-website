@@ -245,10 +245,10 @@ const Contact: React.FC = () => {
           <p className="text-lg">
             Prefer to reach out directly? Email us at{" "}
             <a
-              href="mailto:hello@centivra.com"
+              href="mailto:support@centivra.com"
               className="text-[#0070CC] hover:underline"
             >
-              hello@centivra.com
+              support@centivra.com
             </a>{" "}
             or connect with our team for collaborations.
           </p>

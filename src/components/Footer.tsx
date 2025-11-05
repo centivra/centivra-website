@@ -84,8 +84,8 @@ const Footer: React.FC = () => {
                     </div>
                     <div>
                       <div className="text-md font-medium text-slate-300 mb-1">Email</div>
-                      <a href="mailto:hello@centivra.com" className="text-white hover:text-blue-400 transition-colors">
-                        hello@centivra.com
+                      <a href="mailto:support@centivra.com" className="text-white hover:text-blue-400 transition-colors">
+                        support@centivra.com
                       </a>
                     </div>
                   </div>
