@@ -12,7 +12,7 @@ const WhoWeAre: React.FC = () => {
         <title>About Us | Centivra - Driving Innovation Through Technology</title>
         <meta
           name="description"
-          content="Learn about Centivra — a forward-thinking technology company dedicated to building AI-driven software, scalable platforms, and digital ecosystems that transform businesses."
+          content="Learn about Centivra - a forward-thinking technology company dedicated to building AI-driven software, scalable platforms, and digital ecosystems that transform businesses."
         />
         <link rel="canonical" href="https://www.centivra.com/who-we-are" />
       </Helmet>
@@ -71,6 +71,7 @@ const WhoWeAre: React.FC = () => {
               </p>
               <Link
                   to="/services"
+                  aria-label="Learn more about our services"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#0070CC] transition"
               >
                   Explore Our Services <ArrowRight size={18} />

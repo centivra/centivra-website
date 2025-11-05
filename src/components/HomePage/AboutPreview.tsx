@@ -26,6 +26,7 @@ const AboutCentivra: React.FC = () => {
 
           <Link
             to="/who-we-are"
+            aria-label="Learn more about Centivra and our company"
             className="inline-block px-6 py-3 bg-[#001B51] text-white font-semibold rounded-full hover:bg-[#0070CC] transition"
           >
             Learn More
